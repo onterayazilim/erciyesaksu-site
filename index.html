@@ -1,0 +1,1875 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183b2b">
+
+  <title>Erciyes Aksu Tarım | Agricultural Products</title>
+  <meta name="description" content="Erciyes Aksu Tarım. Türkiye menşeli kabak çekirdeği, ay çekirdeği ve Antep fıstığı tedariki ve ihracatı.">
+  <meta property="og:title" content="Erciyes Aksu Tarım">
+  <meta property="og:description" content="Local Sourcing. Global Delivery.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --green: #183b2b;
+      --green-2: #315b43;
+      --green-3: #55745b;
+      --cream: #f6f5ef;
+      --paper: #fff;
+      --ink: #252d27;
+      --muted: #697169;
+      --line: #e2e6df;
+      --gold: #bca16b;
+      --success: #245b38;
+      --error: #a22e2e;
+      --max: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    button, input, select, textarea { font: inherit; }
+
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    .container {
+      width: min(var(--max), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .section { padding: 96px 0; }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: var(--green-2);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+      color: var(--green);
+      line-height: 1.2;
+      letter-spacing: -.6px;
+    }
+
+    h1 { font-size: clamp(42px, 5.4vw, 68px); }
+    h2 { margin-bottom: 18px; font-size: clamp(30px, 3.8vw, 43px); }
+    h3 { margin-bottom: 12px; font-size: 21px; }
+
+    p { margin-top: 0; color: var(--muted); }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 40px;
+    }
+
+    .section-heading > p { font-size: 16px; }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 49px;
+      padding: 12px 22px;
+      border: 1px solid var(--green);
+      border-radius: 3px;
+      background: var(--green);
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: .2s ease;
+    }
+
+    .button:hover {
+      background: var(--green-2);
+      border-color: var(--green-2);
+      transform: translateY(-1px);
+    }
+
+    .button-outline {
+      background: transparent;
+      color: var(--green);
+    }
+
+    .button-outline:hover { color: white; }
+
+    .button:disabled {
+      opacity: .65;
+      cursor: wait;
+      transform: none;
+    }
+
+    /* CSS-ONLY BRAND MARK */
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .brand-symbol {
+      position: relative;
+      display: grid;
+      width: 47px;
+      height: 47px;
+      place-items: center;
+      overflow: hidden;
+      border: 1.5px solid var(--green);
+      color: var(--green);
+      background: transparent;
+    }
+
+    .brand-symbol::before {
+      position: absolute;
+      top: 5px;
+      bottom: 5px;
+      left: 50%;
+      width: 1px;
+      background: var(--gold);
+      content: "";
+    }
+
+    .brand-symbol span {
+      position: relative;
+      z-index: 1;
+      padding: 0 2px;
+      background: white;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -2px;
+    }
+
+    .brand-copy { display: block; }
+
+    .brand-name {
+      display: block;
+      color: var(--green);
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: .1px;
+    }
+
+    .brand-caption {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 9px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    /* HEADER */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,.97);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      display: flex;
+      min-height: 82px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .nav a {
+      color: #37443a;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .nav a:hover { color: var(--green-3); }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .language-button, .menu-toggle {
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: white;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .menu-toggle { display: none; }
+
+    /* HERO */
+
+    .hero {
+      overflow: hidden;
+      background: var(--cream);
+    }
+
+    .hero-grid {
+      display: grid;
+      min-height: 600px;
+      grid-template-columns: 1.05fr .95fr;
+      align-items: center;
+      gap: 65px;
+      padding-top: 65px;
+      padding-bottom: 65px;
+    }
+
+    .hero-copy h1 { margin-bottom: 24px; }
+
+    .hero-copy h1 span { color: var(--green-2); }
+
+    .hero-copy > p {
+      max-width: 550px;
+      margin-bottom: 28px;
+      font-size: 17px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-note {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 30px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .hero-note::before {
+      width: 25px;
+      height: 1px;
+      background: var(--gold);
+      content: "";
+    }
+
+    .hero-visual { position: relative; min-width: 0; }
+
+    .hero-image {
+      height: 440px;
+      overflow: hidden;
+      background: #ece9df;
+    }
+
+    .hero-image img { object-position: center; }
+
+    .hero-caption {
+      position: absolute;
+      bottom: -18px;
+      left: -22px;
+      max-width: 270px;
+      padding: 19px 22px;
+      border-left: 3px solid var(--gold);
+      background: white;
+      box-shadow: 0 12px 35px #183b2b12;
+    }
+
+    .hero-caption strong {
+      display: block;
+      color: var(--green);
+      font-size: 13px;
+    }
+
+    .hero-caption span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* BUSINESS PRINCIPLES */
+
+    .principles { background: var(--green); color: white; }
+
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .principle {
+      padding: 25px 28px;
+      border-right: 1px solid #ffffff24;
+      text-align: center;
+    }
+
+    .principle:last-child { border-right: 0; }
+
+    .principle strong {
+      display: block;
+      margin-bottom: 5px;
+      color: white;
+      font-size: 13px;
+    }
+
+    .principle span {
+      color: #d2ddd3;
+      font-size: 12px;
+    }
+
+    /* PRODUCTS */
+
+    .products { background: white; }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 23px;
+    }
+
+    .product-card {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: white;
+      transition: box-shadow .2s, transform .2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px #183b2b0c;
+    }
+
+    .product-image {
+      height: 285px;
+      overflow: hidden;
+      background: #efede5;
+    }
+
+    .product-image img { transition: transform .35s; }
+
+    .product-card:hover .product-image img { transform: scale(1.035); }
+
+    .product-content { padding: 25px; }
+
+    .product-number {
+      margin-bottom: 10px;
+      color: #9b8353;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+
+    .product-content h3 { margin-bottom: 12px; }
+
+    .product-content p {
+      min-height: 112px;
+      margin-bottom: 18px;
+      font-size: 13px;
+    }
+
+    .product-link {
+      display: inline-block;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .product-link:hover { text-decoration: underline; }
+
+    .small-note {
+      margin-top: 24px;
+      font-size: 12px;
+    }
+
+    /* ABOUT */
+
+    .about { background: var(--cream); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 75px;
+      align-items: start;
+    }
+
+    .about-copy p { margin-top: 16px; font-size: 15px; }
+
+    .about-cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 13px;
+    }
+
+    .about-card {
+      padding: 23px;
+      border: 1px solid var(--line);
+      background: white;
+    }
+
+    .about-card .index {
+      margin-bottom: 12px;
+      color: #9b8353;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .about-card h3 { font-size: 16px; }
+
+    .about-card p { margin-bottom: 0; font-size: 12px; }
+
+    /* SPECIFICATIONS */
+
+    .specifications { background: white; }
+
+    .spec-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 65px;
+      align-items: start;
+    }
+
+    .spec-intro p { font-size: 15px; }
+
+    .spec-list { border-top: 1px solid var(--line); }
+
+    .spec-row {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 22px;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .spec-row strong {
+      color: var(--green);
+      font-size: 13px;
+    }
+
+    .spec-row span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .spec-note {
+      margin-top: 20px;
+      padding: 16px 18px;
+      border-left: 3px solid var(--green-2);
+      background: #edf2eb;
+      font-size: 12px;
+    }
+
+    /* QUALITY */
+
+    .quality {
+      background: var(--green);
+      color: white;
+    }
+
+    .quality h2, .quality h3 { color: white; }
+
+    .quality .eyebrow { color: #ddc895; }
+
+    .quality .section-heading > p { color: #d0dcd1; }
+
+    .quality-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .quality-card {
+      padding: 23px 20px;
+      border: 1px solid #ffffff2b;
+    }
+
+    .quality-symbol {
+      display: grid;
+      width: 36px;
+      height: 36px;
+      margin-bottom: 19px;
+      place-items: center;
+      border: 1px solid #9eae9e;
+      border-radius: 50%;
+      color: #e0cb9c;
+      font-size: 16px;
+    }
+
+    .quality-card h3 { font-size: 16px; }
+
+    .quality-card p {
+      margin-bottom: 0;
+      color: #d0dcd1;
+      font-size: 12px;
+    }
+
+    .quality-note {
+      margin-top: 23px;
+      color: #c6d4c9;
+      font-size: 11px;
+    }
+
+    /* PROCESS */
+
+    .process { background: var(--cream); }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 23px;
+    }
+
+    .process-step {
+      padding-top: 20px;
+      border-top: 2px solid #cdd6cb;
+    }
+
+    .step-no {
+      display: block;
+      margin-bottom: 15px;
+      color: var(--green-2);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+
+    .process-step h3 { font-size: 17px; }
+
+    .process-step p { margin-bottom: 0; font-size: 12px; }
+
+    /* CONTACT */
+
+    .contact { background: white; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .contact-copy > p { font-size: 15px; }
+
+    .contact-list {
+      display: grid;
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .contact-item {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 13px;
+      align-items: start;
+    }
+
+    .contact-icon {
+      display: grid;
+      width: 40px;
+      height: 40px;
+      place-items: center;
+      background: #edf2eb;
+      color: var(--green);
+      font-size: 15px;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--green);
+      font-size: 12px;
+    }
+
+    .contact-item a, .contact-item span {
+      color: var(--muted);
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-item a:hover { color: var(--green-2); }
+
+    .contact-form {
+      padding: 30px;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 35px #183b2b09;
+    }
+
+    .contact-form h3 { margin-bottom: 8px; font-size: 23px; }
+
+    .form-intro {
+      margin-bottom: 23px;
+      font-size: 12px;
+    }
+
+    .field { margin-bottom: 16px; }
+
+    .field label {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .field input, .field select, .field textarea {
+      display: block;
+      width: 100%;
+      min-height: 46px;
+      padding: 11px 12px;
+      border: 1px solid #dce2da;
+      border-radius: 2px;
+      outline: none;
+      background: white;
+      color: var(--ink);
+      font-size: 13px;
+    }
+
+    .field textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: var(--green-2);
+      box-shadow: 0 0 0 3px #315b4310;
+    }
+
+    .contact-form .button { width: 100%; }
+
+    .form-status {
+      display: none;
+      margin: 16px 0 0;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      font-size: 13px;
+    }
+
+    .form-status.visible { display: block; }
+
+    .form-status.success {
+      border-color: #b8d4be;
+      background: #edf7ef;
+      color: var(--success);
+    }
+
+    .form-status.error {
+      border-color: #e6bebe;
+      background: #fff0f0;
+      color: var(--error);
+    }
+
+    .form-footnote {
+      margin: 12px 0 0;
+      font-size: 10px;
+    }
+
+    .hp-field {
+      position: absolute !important;
+      left: -10000px !important;
+      width: 1px !important;
+      height: 1px !important;
+      overflow: hidden !important;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      padding: 34px 0 22px;
+      background: #112d20;
+      color: white;
+    }
+
+    .footer-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #ffffff24;
+    }
+
+    .footer .brand-symbol {
+      border-color: white;
+      color: white;
+    }
+
+    .footer .brand-symbol span { background: #112d20; }
+
+    .footer .brand-name { color: white; }
+
+    .footer .brand-caption { color: #c2d0c5; }
+
+    .footer-tagline {
+      margin: 12px 0 0;
+      color: #c2d0c5;
+      font-size: 11px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .footer-links a {
+      color: #e0e8e1;
+      font-size: 11px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 20px;
+      color: #b8c8bc;
+      font-size: 10px;
+    }
+
+    .footer-credit {
+      margin-top: 13px;
+      color: #b8c8bc;
+      font-size: 10px;
+    }
+
+    .footer-credit a { text-decoration: underline; }
+
+    @media (max-width: 1000px) {
+      .nav { gap: 14px; }
+      .nav a { font-size: 11px; }
+      .hero-grid { gap: 35px; }
+      .about-grid, .spec-grid, .contact-grid { gap: 38px; }
+      .quality-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .product-image { height: 235px; }
+    }
+
+    @media (max-width: 760px) {
+      .container { width: calc(100% - 34px); }
+      .section { padding: 68px 0; }
+
+      .header-inner { min-height: 72px; gap: 10px; }
+
+      .brand { gap: 9px; }
+      .brand-symbol { width: 39px; height: 39px; }
+      .brand-symbol span { font-size: 16px; }
+      .brand-name { font-size: 12px; }
+      .brand-caption { font-size: 8px; letter-spacing: 1px; }
+
+      .header-actions { gap: 6px; }
+      .menu-toggle { display: inline-flex; }
+
+      .nav {
+        position: absolute;
+        top: 71px;
+        right: 0;
+        left: 0;
+        display: none;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0;
+        padding: 8px 22px 18px;
+        border-bottom: 1px solid var(--line);
+        background: white;
+        box-shadow: 0 12px 25px #183b2b10;
+      }
+
+      .nav.open { display: flex; }
+
+      .nav a {
+        padding: 12px 4px;
+        border-bottom: 1px solid #edf0eb;
+        font-size: 13px;
+      }
+
+      .hero-grid {
+        min-height: 0;
+        grid-template-columns: 1fr;
+        gap: 38px;
+        padding-top: 58px;
+        padding-bottom: 58px;
+      }
+
+      h1 { font-size: clamp(39px, 10vw, 57px); }
+
+      .hero-copy > p { font-size: 15px; }
+      .hero-image { height: 325px; }
+      .hero-caption { left: 10px; }
+
+      .principles-grid { grid-template-columns: 1fr; }
+
+      .principle {
+        padding: 19px;
+        border-right: 0;
+        border-bottom: 1px solid #ffffff24;
+      }
+
+      .principle:last-child { border-bottom: 0; }
+
+      .product-grid { grid-template-columns: 1fr; gap: 20px; }
+      .product-image { height: 290px; }
+      .product-content p { min-height: 0; }
+
+      .about-grid, .spec-grid, .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+
+      .about-cards { gap: 10px; }
+      .about-card { padding: 17px; }
+
+      .spec-row { grid-template-columns: 1fr; gap: 4px; }
+
+      .quality-grid { gap: 12px; }
+      .quality-card { padding: 18px 14px; }
+
+      .process-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px 16px; }
+
+      .contact-form { padding: 23px 18px; }
+
+      .footer-main, .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .footer-links { gap: 13px; }
+    }
+
+    @media (max-width: 390px) {
+      .container { width: calc(100% - 28px); }
+      .hero-buttons .button { width: 100%; }
+      .about-cards, .quality-grid, .process-grid { grid-template-columns: 1fr; }
+      .product-image { height: 250px; }
+      .contact-form { padding: 19px 14px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="#home" aria-label="Erciyes Aksu Tarım">
+        <span class="brand-symbol" aria-hidden="true"><span>EA</span></span>
+        <span class="brand-copy">
+          <span class="brand-name">Erciyes Aksu Tarım</span>
+          <span class="brand-caption" data-i18n="brandCaption">Tarımsal Ürünler</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a href="#home" data-i18n="navHome">Ana Sayfa</a>
+        <a href="#products" data-i18n="navProducts">Ürünler</a>
+        <a href="#about" data-i18n="navAbout">Şirketimiz</a>
+        <a href="#specifications" data-i18n="navSpecs">Ürün Kriterleri</a>
+        <a href="#contact" data-i18n="navContact">İletişim</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="language-button" id="languageToggle" type="button"
+          aria-label="Change language">EN</button>
+        <button class="menu-toggle" id="menuToggle" type="button"
+          aria-expanded="false" aria-controls="mainNav"
+          data-i18n="menu">Menü</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <span class="eyebrow" data-i18n="heroEyebrow">Türkiye'den Uluslararası Pazarlara</span>
+
+          <h1 data-i18n-html="heroTitle">
+            Yerel Kaynak.<br><span>Küresel Teslimat.</span>
+          </h1>
+
+          <p data-i18n="heroText">
+            Erciyes Aksu Tarım, Türkiye menşeli tarımsal ürünlerin
+            tedariki ve uluslararası ticareti için alıcılarla
+            üretim ve tedarik kaynakları arasında ticari iş birliği yürütür.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="button" href="#products" data-i18n="heroProducts">Ürün portföyü →</a>
+            <a class="button button-outline" href="#contact" data-i18n="heroContact">Teklif talebi</a>
+          </div>
+
+          <div class="hero-note" data-i18n="heroNote">
+            Tarımsal ürün tedariki · İhracat · Uluslararası ticaret
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image">
+            <img src="kabak-cekirdegi.jpg"
+              alt="Kabuklu beyaz kabak çekirdeği"
+              fetchpriority="high">
+          </div>
+          <div class="hero-caption">
+            <strong data-i18n="heroCaptionTitle">Erciyes Aksu Tarım</strong>
+            <span data-i18n="heroCaptionText">Türkiye menşeli tarımsal ürünler</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BUSINESS PRINCIPLES -->
+    <section class="principles">
+      <div class="container principles-grid">
+
+        <div class="principle">
+          <strong data-i18n="principle1Title">Ürün ve Menşe</strong>
+          <span data-i18n="principle1Text">Talebe uygun ürün ve tedarik koşulları</span>
+        </div>
+
+        <div class="principle">
+          <strong data-i18n="principle2Title">Açık Ticari Şartlar</strong>
+          <span data-i18n="principle2Text">Spesifikasyon, miktar ve teslimat mutabakatı</span>
+        </div>
+
+        <div class="principle">
+          <strong data-i18n="principle3Title">Uzun Vadeli İş Birliği</strong>
+          <span data-i18n="principle3Text">Sürdürülebilir ticari ilişkiler</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section products" id="products">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="productsEyebrow">Ürün Grupları</span>
+          <h2 data-i18n="productsTitle">Tedarik Ettiğimiz Ürünler</h2>
+          <p data-i18n="productsIntro">
+            Kabuklu çekirdek çeşitleri ve Antep fıstığı için ürün
+            özellikleri, sipariş miktarı ve teslimat beklentileri
+            doğrultusunda tedarik seçenekleri değerlendiriyoruz.
+          </p>
+        </div>
+
+        <div class="product-grid">
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="kabak-cekirdegi.jpg"
+                alt="Kabuklu beyaz kabak çekirdeği"
+                loading="lazy">
+            </div>
+            <div class="product-content">
+              <div class="product-number">01 / SEEDS</div>
+              <h3 data-i18n="pumpkinTitle">Kabak Çekirdeği</h3>
+              <p data-i18n="pumpkinText">
+                Çerezlik pazara yönelik kabuklu kabak çekirdeği.
+                Kalibre, çıtlak oranı, nem, saflık ve kusurlu tane
+                kriterleri talep edilen ürün standardına göre değerlendirilir.
+              </p>
+              <a class="product-link" href="#contact"
+                data-product="Kabak Çekirdeği" data-i18n="productLink">
+                Bu ürün için teklif isteyin →
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="aycekirdegi.jpg"
+                alt="Çizgili kabuklu ay çekirdeği"
+                loading="lazy">
+            </div>
+            <div class="product-content">
+              <div class="product-number">02 / SEEDS</div>
+              <h3 data-i18n="sunflowerTitle">Ay Çekirdeği</h3>
+              <p data-i18n="sunflowerText">
+                Çerezlik kullanım için kabuklu ay çekirdeği.
+                Boyut, görünüm, doluluk, yabancı madde ve nem
+                kriterleri alıcı şartnamesi esas alınarak ele alınır.
+              </p>
+              <a class="product-link" href="#contact"
+                data-product="Ay Çekirdeği" data-i18n="productLink">
+                Bu ürün için teklif isteyin →
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Pistachio.jpg?width=1000"
+                alt="Antep fıstığı"
+                loading="lazy">
+            </div>
+            <div class="product-content">
+              <div class="product-number">03 / PISTACHIOS</div>
+              <h3 data-i18n="pistachioTitle">Antep Fıstığı</h3>
+              <p data-i18n="pistachioText">
+                Gıda ve kuruyemiş sektörüne yönelik Antep fıstığı.
+                Ürün formu, kalibre, iç oranı, kusur kriterleri ve
+                ambalaj koşulları sipariş bazında belirlenir.
+              </p>
+              <a class="product-link" href="#contact"
+                data-product="Antep Fıstığı" data-i18n="productLink">
+                Bu ürün için teklif isteyin →
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="small-note" data-i18n="productsNote">
+          Ürün bulunabilirliği, menşe, hasat dönemi, miktar ve
+          teslim koşulları her talep için ayrıca teyit edilir.
+        </p>
+      </div>
+    </section>
+
+    <!-- COMPANY -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+
+        <div class="about-copy">
+          <span class="eyebrow" data-i18n="aboutEyebrow">Şirketimiz</span>
+          <h2 data-i18n="aboutTitle">Ticarette Netlik, Tedarikte Devamlılık</h2>
+
+          <p data-i18n="aboutText1">
+            Erciyes Aksu Tarım Gıda İnşaat Tic. Ltd. Şti.,
+            tarımsal ürün ticareti ve tedarik süreçlerinde faaliyet gösterir.
+            Çalışmalarımızda ürünün niteliği kadar, siparişin ticari
+            şartlarının ve teslimat gerekliliklerinin doğru tanımlanmasına
+            da önem veriyoruz.
+          </p>
+
+          <p data-i18n="aboutText2">
+            Her talebi ürün, miktar, kalite beklentisi, ambalaj ve
+            varış pazarı açısından değerlendiriyor; teklif ve sipariş
+            koşullarını tarafların mutabakatı doğrultusunda ele alıyoruz.
+            Amacımız, alıcılarımızla açık ve devamlı iş ilişkileri kurmaktır.
+          </p>
+        </div>
+
+        <div class="about-cards">
+
+          <article class="about-card">
+            <div class="index">01</div>
+            <h3 data-i18n="aboutCard1Title">Tedarik</h3>
+            <p data-i18n="aboutCard1Text">
+              Ürün ve miktar taleplerinin mevcut tedarik koşullarıyla eşleştirilmesi.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <div class="index">02</div>
+            <h3 data-i18n="aboutCard2Title">Şartname</h3>
+            <p data-i18n="aboutCard2Text">
+              Kalite kriterlerinin sipariş öncesinde açıkça belirlenmesi.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <div class="index">03</div>
+            <h3 data-i18n="aboutCard3Title">Ticari Koordinasyon</h3>
+            <p data-i18n="aboutCard3Text">
+              Fiyat, miktar, ambalaj ve teslim koşullarının değerlendirilmesi.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <div class="index">04</div>
+            <h3 data-i18n="aboutCard4Title">İhracat</h3>
+            <p data-i18n="aboutCard4Text">
+              Varış ülkesi ve sevkiyat gerekliliklerinin sipariş bazında ele alınması.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIFICATIONS -->
+    <section class="section specifications" id="specifications">
+      <div class="container spec-grid">
+
+        <div class="spec-intro">
+          <span class="eyebrow" data-i18n="specEyebrow">Ürün Kriterleri</span>
+          <h2 data-i18n="specTitle">Şartnameye Göre Değerlendirme</h2>
+          <p data-i18n="specIntro">
+            Tarımsal ürünlerde kalite, tek bir ölçütle tanımlanamaz.
+            Ürün çeşidi ve kullanım amacına göre gerekli parametreler
+            belirlenir ve teklif aşamasında karşılıklı olarak netleştirilir.
+          </p>
+        </div>
+
+        <div>
+          <div class="spec-list">
+
+            <div class="spec-row">
+              <strong data-i18n="spec1Title">Kalibre ve Boyut</strong>
+              <span data-i18n="spec1Text">Ürün çeşidine uygun ölçüm ve sınıflandırma.</span>
+            </div>
+
+            <div class="spec-row">
+              <strong data-i18n="spec2Title">Çıtlak ve Doluluk</strong>
+              <span data-i18n="spec2Text">İlgili çekirdek ürünlerinde talep edilen oranlar ve değerlendirme yöntemi.</span>
+            </div>
+
+            <div class="spec-row">
+              <strong data-i18n="spec3Title">Nem Oranı</strong>
+              <span data-i18n="spec3Text">Ürün ve hedef pazar için kararlaştırılan sınırlar.</span>
+            </div>
+
+            <div class="spec-row">
+              <strong data-i18n="spec4Title">Saflık ve Yabancı Madde</strong>
+              <span data-i18n="spec4Text">Temizlik, saflık ve yabancı madde toleransları.</span>
+            </div>
+
+            <div class="spec-row">
+              <strong data-i18n="spec5Title">Kusurlu Taneler</strong>
+              <span data-i18n="spec5Text">Boş, kırık, hasarlı veya kusurlu tanelere ilişkin kriterler.</span>
+            </div>
+
+            <div class="spec-row">
+              <strong data-i18n="spec6Title">Gıda Güvenliği</strong>
+              <span data-i18n="spec6Text">Hedef pazarda geçerli mevzuat, gerekli analizler ve limitler.</span>
+            </div>
+
+          </div>
+
+          <div class="spec-note" data-i18n="specNote">
+            Buradaki başlıklar genel kalite kriterlerini açıklar.
+            Belirli bir partiye ait değerler, analiz sonuçları ve
+            belgeler yalnızca mevcut ve doğrulanmış bilgiler üzerinden teyit edilir.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- QUALITY -->
+    <section class="section quality" id="quality">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="qualityEyebrow">Kalite ve Uygunluk</span>
+          <h2 data-i18n="qualityTitle">Siparişin Gereklilikleri Esas Alınır</h2>
+          <p data-i18n="qualityIntro">
+            Ürün şartnamesi, kontrol yöntemi, ambalaj ve belge
+            gereklilikleri siparişin kapsamına ve varış ülkesine göre belirlenir.
+          </p>
+        </div>
+
+        <div class="quality-grid">
+
+          <article class="quality-card">
+            <div class="quality-symbol" aria-hidden="true">01</div>
+            <h3 data-i18n="quality1Title">Şartname</h3>
+            <p data-i18n="quality1Text">
+              Ürün özelliklerinin ve kabul kriterlerinin sipariş öncesinde tanımlanması.
+            </p>
+          </article>
+
+          <article class="quality-card">
+            <div class="quality-symbol" aria-hidden="true">02</div>
+            <h3 data-i18n="quality2Title">Numune ve Analiz</h3>
+            <p data-i18n="quality2Text">
+              Gerektiğinde numune, laboratuvar analizi ve ürün kontrolünün planlanması.
+            </p>
+          </article>
+
+          <article class="quality-card">
+            <div class="quality-symbol" aria-hidden="true">03</div>
+            <h3 data-i18n="quality3Title">Belgeler</h3>
+            <p data-i18n="quality3Text">
+              İhracat ve hedef pazar için gerekli belgelerin sipariş kapsamında değerlendirilmesi.
+            </p>
+          </article>
+
+          <article class="quality-card">
+            <div class="quality-symbol" aria-hidden="true">04</div>
+            <h3 data-i18n="quality4Title">Teslimat</h3>
+            <p data-i18n="quality4Text">
+              Ambalaj, teslim şekli ve sevkiyat koşullarının mutabakata göre düzenlenmesi.
+            </p>
+          </article>
+
+        </div>
+
+        <p class="quality-note" data-i18n="qualityNote">
+          Sertifika, analiz veya uygunluk beyanları ilgili ürün ve parti için
+          doğrulanmadan garanti olarak sunulmaz.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process" id="process">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="processEyebrow">Çalışma Süreci</span>
+          <h2 data-i18n="processTitle">Talebin Değerlendirilmesinden Sevkiyata</h2>
+          <p data-i18n="processIntro">
+            Ticari sürecin her aşamasında ürün ve teslimat koşulları
+            netleştirilerek ilerlenir.
+          </p>
+        </div>
+
+        <div class="process-grid">
+
+          <article class="process-step">
+            <span class="step-no">01 / ENQUIRY</span>
+            <h3 data-i18n="step1Title">Talep</h3>
+            <p data-i18n="step1Text">
+              Ürün, miktar, kalite, ambalaj ve varış noktası bilgilerinin alınması.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <span class="step-no">02 / QUOTATION</span>
+            <h3 data-i18n="step2Title">Teklif</h3>
+            <p data-i18n="step2Text">
+              Tedarik koşullarının değerlendirilmesi ve ticari teklifin hazırlanması.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <span class="step-no">03 / CONFIRMATION</span>
+            <h3 data-i18n="step3Title">Mutabakat</h3>
+            <p data-i18n="step3Text">
+              Ürün şartnamesi, miktar, fiyat ve teslim koşullarının teyidi.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <span class="step-no">04 / DELIVERY</span>
+            <h3 data-i18n="step4Title">Teslimat</h3>
+            <p data-i18n="step4Text">
+              Kararlaştırılan sevkiyat ve dokümantasyon koşullarının takibi.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FORMSPREE -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-copy">
+          <span class="eyebrow" data-i18n="contactEyebrow">İletişim</span>
+          <h2 data-i18n="contactTitle">Ticari Talebinizi İletin</h2>
+          <p data-i18n="contactIntro">
+            Ürün çeşidi, tahmini miktar, kalite beklentisi ve teslimat
+            noktasını paylaşarak teklif sürecini başlatabilirsiniz.
+            Talebiniz için bizimle doğrudan iletişime de geçebilirsiniz.
+          </p>
+
+          <div class="contact-list">
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">@</div>
+              <div>
+                <strong data-i18n="emailLabel">E-posta</strong>
+                <a href="mailto:info@erciyesaksutarim.com.tr">
+                  info@erciyesaksutarim.com.tr
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">☎</div>
+              <div>
+                <strong data-i18n="phoneLabel">Telefon</strong>
+                <a href="tel:+903526212315">+90 352 621 23 15</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">⌖</div>
+              <div>
+                <strong data-i18n="addressLabel">Adres</strong>
+                <a href="https://www.google.com/maps/search/?api=1&query=Hadibey+Cd+267+Develi+Kayseri"
+                   target="_blank" rel="noopener noreferrer">
+                  Hadibey Cd. No: 267, Develi, Kayseri, Türkiye
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <form class="contact-form"
+          id="contactForm"
+          action="https://formspree.io/f/xyeegonl"
+          method="POST">
+
+          <h3 data-i18n="formTitle">Teklif ve Bilgi Talebi</h3>
+          <p class="form-intro" data-i18n="formIntro">
+            Formu doldurarak talebinizi doğrudan bize iletin.
+          </p>
+
+          <input type="hidden" name="_subject"
+            value="Erciyes Aksu Tarım - Web Sitesi Teklif Talebi">
+
+          <!-- Honeypot: hidden spam trap -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" type="text" name="_gotcha" tabindex="-1"
+              autocomplete="off">
+          </div>
+
+          <div class="field">
+            <label for="name" data-i18n="formName">Ad Soyad</label>
+            <input id="name" name="name" type="text"
+              autocomplete="name" required maxlength="120"
+              placeholder="Adınız ve soyadınız"
+              data-i18n-placeholder="namePlaceholder">
+          </div>
+
+          <div class="field">
+            <label for="company" data-i18n="formCompany">Firma</label>
+            <input id="company" name="company" type="text"
+              autocomplete="organization" maxlength="160"
+              placeholder="Firma adı"
+              data-i18n-placeholder="companyPlaceholder">
+          </div>
+
+          <div class="field">
+            <label for="email" data-i18n="formEmail">İş e-postası</label>
+            <input id="email" name="email" type="email"
+              autocomplete="email" required maxlength="254"
+              placeholder="name@company.com">
+          </div>
+
+          <div class="field">
+            <label for="country" data-i18n="formCountry">Ülke / Varış Pazarı</label>
+            <input id="country" name="destination_country" type="text"
+              maxlength="120"
+              placeholder="Örn. Almanya"
+              data-i18n-placeholder="countryPlaceholder">
+          </div>
+
+          <div class="field">
+            <label for="product" data-i18n="formProduct">İlgilendiğiniz Ürün</label>
+            <select id="product" name="product" required>
+              <option value="" data-i18n="selectDefault">Ürün seçin</option>
+              <option value="Kabak Çekirdeği" data-i18n="formPumpkin">Kabak Çekirdeği</option>
+              <option value="Ay Çekirdeği" data-i18n="formSunflower">Ay Çekirdeği</option>
+              <option value="Antep Fıstığı" data-i18n="formPistachio">Antep Fıstığı</option>
+              <option value="Birden Fazla Ürün" data-i18n="formMultiple">Birden Fazla Ürün</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="quantity" data-i18n="formQuantity">Tahmini Miktar</label>
+            <input id="quantity" name="quantity" type="text"
+              maxlength="120"
+              placeholder="Örn. 1 konteyner / 22 ton"
+              data-i18n-placeholder="quantityPlaceholder">
+          </div>
+
+          <div class="field">
+            <label for="message" data-i18n="formMessage">Talep Detayları</label>
+            <textarea id="message" name="message" required maxlength="5000"
+              placeholder="Ürün özellikleri, kalite kriterleri, ambalaj ve teslimat beklentileriniz..."
+              data-i18n-placeholder="messagePlaceholder"></textarea>
+          </div>
+
+          <button class="button" id="submitButton" type="submit"
+            data-i18n="formSubmit">
+            Talebi Gönder →
+          </button>
+
+          <p id="formStatus" class="form-status" role="status"
+            aria-live="polite"></p>
+
+          <p class="form-footnote" data-i18n="formFootnote">
+            Form bilgileri, talebinizi değerlendirmek ve sizinle iletişim
+            kurmak amacıyla gönderilir.
+          </p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-main">
+        <div>
+          <a class="brand" href="#home" aria-label="Erciyes Aksu Tarım">
+            <span class="brand-symbol" aria-hidden="true"><span>EA</span></span>
+            <span class="brand-copy">
+              <span class="brand-name">Erciyes Aksu Tarım</span>
+              <span class="brand-caption" data-i18n="brandCaption">Tarımsal Ürünler</span>
+            </span>
+          </a>
+          <p class="footer-tagline" data-i18n="footerTagline">
+            Yerel Kaynak. Küresel Teslimat.
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#products" data-i18n="navProducts">Ürünler</a>
+          <a href="#about" data-i18n="navAbout">Şirketimiz</a>
+          <a href="#specifications" data-i18n="navSpecs">Ürün Kriterleri</a>
+          <a href="#contact" data-i18n="navContact">İletişim</a>
+          <a href="mailto:info@erciyesaksutarim.com.tr">E-posta</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Erciyes Aksu Tarım. <span data-i18n="rights">Tüm hakları saklıdır.</span></span>
+        <span data-i18n="footerLocation">Develi, Kayseri, Türkiye</span>
+      </div>
+
+      <p class="footer-credit">
+        <span data-i18n="imageCredit">Antep fıstığı görseli: Wikimedia Commons, Pistachio.jpg, CC BY-SA 3.0.</span>
+        <a href="https://commons.wikimedia.org/wiki/File:Pistachio.jpg"
+           target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>
+      </p>
+
+    </div>
+  </footer>
+
+  <script>
+    const translations = {
+      tr: {
+        brandCaption: "Tarımsal Ürünler",
+        navHome: "Ana Sayfa",
+        navProducts: "Ürünler",
+        navAbout: "Şirketimiz",
+        navSpecs: "Ürün Kriterleri",
+        navContact: "İletişim",
+        menu: "Menü",
+
+        heroEyebrow: "Türkiye'den Uluslararası Pazarlara",
+        heroTitle: 'Yerel Kaynak.<br><span>Küresel Teslimat.</span>',
+        heroText: "Erciyes Aksu Tarım, Türkiye menşeli tarımsal ürünlerin tedariki ve uluslararası ticareti için alıcılarla üretim ve tedarik kaynakları arasında ticari iş birliği yürütür.",
+        heroProducts: "Ürün portföyü →",
+        heroContact: "Teklif talebi",
+        heroNote: "Tarımsal ürün tedariki · İhracat · Uluslararası ticaret",
+        heroCaptionTitle: "Erciyes Aksu Tarım",
+        heroCaptionText: "Türkiye menşeli tarımsal ürünler",
+
+        principle1Title: "Ürün ve Menşe",
+        principle1Text: "Talebe uygun ürün ve tedarik koşulları",
+        principle2Title: "Açık Ticari Şartlar",
+        principle2Text: "Spesifikasyon, miktar ve teslimat mutabakatı",
+        principle3Title: "Uzun Vadeli İş Birliği",
+        principle3Text: "Sürdürülebilir ticari ilişkiler",
+
+        productsEyebrow: "Ürün Grupları",
+        productsTitle: "Tedarik Ettiğimiz Ürünler",
+        productsIntro: "Kabuklu çekirdek çeşitleri ve Antep fıstığı için ürün özellikleri, sipariş miktarı ve teslimat beklentileri doğrultusunda tedarik seçenekleri değerlendiriyoruz.",
+        pumpkinTitle: "Kabak Çekirdeği",
+        pumpkinText: "Çerezlik pazara yönelik kabuklu kabak çekirdeği. Kalibre, çıtlak oranı, nem, saflık ve kusurlu tane kriterleri talep edilen ürün standardına göre değerlendirilir.",
+        sunflowerTitle: "Ay Çekirdeği",
+        sunflowerText: "Çerezlik kullanım için kabuklu ay çekirdeği. Boyut, görünüm, doluluk, yabancı madde ve nem kriterleri alıcı şartnamesi esas alınarak ele alınır.",
+        pistachioTitle: "Antep Fıstığı",
+        pistachioText: "Gıda ve kuruyemiş sektörüne yönelik Antep fıstığı. Ürün formu, kalibre, iç oranı, kusur kriterleri ve ambalaj koşulları sipariş bazında belirlenir.",
+        productLink: "Bu ürün için teklif isteyin →",
+        productsNote: "Ürün bulunabilirliği, menşe, hasat dönemi, miktar ve teslim koşulları her talep için ayrıca teyit edilir.",
+
+        aboutEyebrow: "Şirketimiz",
+        aboutTitle: "Ticarette Netlik, Tedarikte Devamlılık",
+        aboutText1: "Erciyes Aksu Tarım Gıda İnşaat Tic. Ltd. Şti., tarımsal ürün ticareti ve tedarik süreçlerinde faaliyet gösterir. Çalışmalarımızda ürünün niteliği kadar, siparişin ticari şartlarının ve teslimat gerekliliklerinin doğru tanımlanmasına da önem veriyoruz.",
+        aboutText2: "Her talebi ürün, miktar, kalite beklentisi, ambalaj ve varış pazarı açısından değerlendiriyor; teklif ve sipariş koşullarını tarafların mutabakatı doğrultusunda ele alıyoruz. Amacımız, alıcılarımızla açık ve devamlı iş ilişkileri kurmaktır.",
+        aboutCard1Title: "Tedarik",
+        aboutCard1Text: "Ürün ve miktar taleplerinin mevcut tedarik koşullarıyla eşleştirilmesi.",
+        aboutCard2Title: "Şartname",
+        aboutCard2Text: "Kalite kriterlerinin sipariş öncesinde açıkça belirlenmesi.",
+        aboutCard3Title: "Ticari Koordinasyon",
+        aboutCard3Text: "Fiyat, miktar, ambalaj ve teslim koşullarının değerlendirilmesi.",
+        aboutCard4Title: "İhracat",
+        aboutCard4Text: "Varış ülkesi ve sevkiyat gerekliliklerinin sipariş bazında ele alınması.",
+
+        specEyebrow: "Ürün Kriterleri",
+        specTitle: "Şartnameye Göre Değerlendirme",
+        specIntro: "Tarımsal ürünlerde kalite, tek bir ölçütle tanımlanamaz. Ürün çeşidi ve kullanım amacına göre gerekli parametreler belirlenir ve teklif aşamasında karşılıklı olarak netleştirilir.",
+        spec1Title: "Kalibre ve Boyut",
+        spec1Text: "Ürün çeşidine uygun ölçüm ve sınıflandırma.",
+        spec2Title: "Çıtlak ve Doluluk",
+        spec2Text: "İlgili çekirdek ürünlerinde talep edilen oranlar ve değerlendirme yöntemi.",
+        spec3Title: "Nem Oranı",
+        spec3Text: "Ürün ve hedef pazar için kararlaştırılan sınırlar.",
+        spec4Title: "Saflık ve Yabancı Madde",
+        spec4Text: "Temizlik, saflık ve yabancı madde toleransları.",
+        spec5Title: "Kusurlu Taneler",
+        spec5Text: "Boş, kırık, hasarlı veya kusurlu tanelere ilişkin kriterler.",
+        spec6Title: "Gıda Güvenliği",
+        spec6Text: "Hedef pazarda geçerli mevzuat, gerekli analizler ve limitler.",
+        specNote: "Buradaki başlıklar genel kalite kriterlerini açıklar. Belirli bir partiye ait değerler, analiz sonuçları ve belgeler yalnızca mevcut ve doğrulanmış bilgiler üzerinden teyit edilir.",
+
+        qualityEyebrow: "Kalite ve Uygunluk",
+        qualityTitle: "Siparişin Gereklilikleri Esas Alınır",
+        qualityIntro: "Ürün şartnamesi, kontrol yöntemi, ambalaj ve belge gereklilikleri siparişin kapsamına ve varış ülkesine göre belirlenir.",
+        quality1Title: "Şartname",
+        quality1Text: "Ürün özelliklerinin ve kabul kriterlerinin sipariş öncesinde tanımlanması.",
+        quality2Title: "Numune ve Analiz",
+        quality2Text: "Gerektiğinde numune, laboratuvar analizi ve ürün kontrolünün planlanması.",
+        quality3Title: "Belgeler",
+        quality3Text: "İhracat ve hedef pazar için gerekli belgelerin sipariş kapsamında değerlendirilmesi.",
+        quality4Title: "Teslimat",
+        quality4Text: "Ambalaj, teslim şekli ve sevkiyat koşullarının mutabakata göre düzenlenmesi.",
+        qualityNote: "Sertifika, analiz veya uygunluk beyanları ilgili ürün ve parti için doğrulanmadan garanti olarak sunulmaz.",
+
+        processEyebrow: "Çalışma Süreci",
+        processTitle: "Talebin Değerlendirilmesinden Sevkiyata",
+        processIntro: "Ticari sürecin her aşamasında ürün ve teslimat koşulları netleştirilerek ilerlenir.",
+        step1Title: "Talep",
+        step1Text: "Ürün, miktar, kalite, ambalaj ve varış noktası bilgilerinin alınması.",
+        step2Title: "Teklif",
+        step2Text: "Tedarik koşullarının değerlendirilmesi ve ticari teklifin hazırlanması.",
+        step3Title: "Mutabakat",
+        step3Text: "Ürün şartnamesi, miktar, fiyat ve teslim koşullarının teyidi.",
+        step4Title: "Teslimat",
+        step4Text: "Kararlaştırılan sevkiyat ve dokümantasyon koşullarının takibi.",
+
+        contactEyebrow: "İletişim",
+        contactTitle: "Ticari Talebinizi İletin",
+        contactIntro: "Ürün çeşidi, tahmini miktar, kalite beklentisi ve teslimat noktasını paylaşarak teklif sürecini başlatabilirsiniz. Talebiniz için bizimle doğrudan iletişime de geçebilirsiniz.",
+        emailLabel: "E-posta",
+        phoneLabel: "Telefon",
+        addressLabel: "Adres",
+        formTitle: "Teklif ve Bilgi Talebi",
+        formIntro: "Formu doldurarak talebinizi doğrudan bize iletin.",
+        formName: "Ad Soyad",
+        namePlaceholder: "Adınız ve soyadınız",
+        formCompany: "Firma",
+        companyPlaceholder: "Firma adı",
+        formEmail: "İş e-postası",
+        formCountry: "Ülke / Varış Pazarı",
+        countryPlaceholder: "Örn. Almanya",
+        formProduct: "İlgilendiğiniz Ürün",
+        selectDefault: "Ürün seçin",
+        formPumpkin: "Kabak Çekirdeği",
+        formSunflower: "Ay Çekirdeği",
+        formPistachio: "Antep Fıstığı",
+        formMultiple: "Birden Fazla Ürün",
+        formQuantity: "Tahmini Miktar",
+        quantityPlaceholder: "Örn. 1 konteyner / 22 ton",
+        formMessage: "Talep Detayları",
+        messagePlaceholder: "Ürün özellikleri, kalite kriterleri, ambalaj ve teslimat beklentileriniz...",
+        formSubmit: "Talebi Gönder →",
+        formSending: "Gönderiliyor...",
+        formSuccess: "Talebiniz başarıyla gönderildi. İlginiz için teşekkür ederiz.",
+        formError: "Talep şu anda gönderilemedi. Lütfen tekrar deneyin veya e-posta ile bize ulaşın.",
+        formFootnote: "Form bilgileri, talebinizi değerlendirmek ve sizinle iletişim kurmak amacıyla gönderilir.",
+
+        footerTagline: "Yerel Kaynak. Küresel Teslimat.",
+        rights: "Tüm hakları saklıdır.",
+        footerLocation: "Develi, Kayseri, Türkiye",
+        imageCredit: "Antep fıstığı görseli: Wikimedia Commons, Pistachio.jpg, CC BY-SA 3.0."
+      },
+
+      en: {
+        brandCaption: "Agricultural Products",
+        navHome: "Home",
+        navProducts: "Products",
+        navAbout: "Our Company",
+        navSpecs: "Specifications",
+        navContact: "Contact",
+        menu: "Menu",
+
+        heroEyebrow: "From Türkiye to International Markets",
+        heroTitle: 'Local Sourcing.<br><span>Global Delivery.</span>',
+        heroText: "Erciyes Aksu Tarım works with buyers and sourcing partners to supply Turkish-origin agricultural products for international trade.",
+        heroProducts: "Our products →",
+        heroContact: "Request a quotation",
+        heroNote: "Agricultural sourcing · Exports · International trade",
+        heroCaptionTitle: "Erciyes Aksu Tarım",
+        heroCaptionText: "Agricultural products of Turkish origin",
+
+        principle1Title: "Product and Origin",
+        principle1Text: "Products and sourcing conditions suited to requirements",
+        principle2Title: "Clear Commercial Terms",
+        principle2Text: "Agreement on specifications, quantities and delivery",
+        principle3Title: "Long-Term Cooperation",
+        principle3Text: "Sustainable commercial relationships",
+
+        productsEyebrow: "Product Range",
+        productsTitle: "Products We Source",
+        productsIntro: "We assess sourcing options for in-shell seeds and pistachios according to product specifications, order quantities and delivery requirements.",
+        pumpkinTitle: "Pumpkin Seeds",
+        pumpkinText: "In-shell pumpkin seeds for the snack market. Size, split-shell percentage, moisture, purity and defective-kernel criteria are assessed against the requested product specification.",
+        sunflowerTitle: "Sunflower Seeds",
+        sunflowerText: "In-shell sunflower seeds for snack applications. Size, appearance, kernel fullness, foreign matter and moisture are considered in line with the buyer's specification.",
+        pistachioTitle: "Antep Pistachios",
+        pistachioText: "Pistachios for food and nut-sector buyers. Product form, size, kernel ratio, defects and packaging requirements are determined for each order.",
+        productLink: "Request a quotation →",
+        productsNote: "Product availability, origin, harvest period, quantities and delivery terms are confirmed for each enquiry.",
+
+        aboutEyebrow: "Our Company",
+        aboutTitle: "Clarity in Trade. Continuity in Supply.",
+        aboutText1: "Erciyes Aksu Tarım Gıda İnşaat Tic. Ltd. Şti. operates in agricultural product trading and sourcing. We place importance on clearly defining both product characteristics and the commercial and delivery terms of each order.",
+        aboutText2: "We assess each enquiry in terms of product, quantity, quality expectations, packaging and destination market. Quotations and order terms are handled subject to agreement between the parties. Our aim is to build clear and lasting business relationships.",
+        aboutCard1Title: "Sourcing",
+        aboutCard1Text: "Matching product and quantity requirements with available sourcing conditions.",
+        aboutCard2Title: "Specifications",
+        aboutCard2Text: "Defining quality criteria clearly before order confirmation.",
+        aboutCard3Title: "Commercial Coordination",
+        aboutCard3Text: "Reviewing price, quantity, packaging and delivery terms.",
+        aboutCard4Title: "Exports",
+        aboutCard4Text: "Addressing destination-country and shipment requirements for each order.",
+
+        specEyebrow: "Product Criteria",
+        specTitle: "Assessment Against Specifications",
+        specIntro: "Agricultural product quality cannot be defined by a single measure. Relevant parameters depend on the product and its intended use and are agreed during the quotation stage.",
+        spec1Title: "Size and Calibration",
+        spec1Text: "Measurement and classification appropriate to the product.",
+        spec2Title: "Split Shell and Fullness",
+        spec2Text: "Requested ratios and assessment methods for applicable seed products.",
+        spec3Title: "Moisture Content",
+        spec3Text: "Limits agreed for the product and destination market.",
+        spec4Title: "Purity and Foreign Matter",
+        spec4Text: "Cleaning, purity and foreign-matter tolerances.",
+        spec5Title: "Defective Kernels",
+        spec5Text: "Criteria for empty, broken, damaged or defective kernels.",
+        spec6Title: "Food Safety",
+        spec6Text: "Applicable regulations, required analyses and limits in the destination market.",
+        specNote: "These headings describe general quality criteria. Values, analysis results and documents for a specific lot are confirmed only when available and verified.",
+
+        qualityEyebrow: "Quality and Compliance",
+        qualityTitle: "Requirements Defined for Each Order",
+        qualityIntro: "Product specifications, inspection methods, packaging and documentation requirements are determined according to the order and destination country.",
+        quality1Title: "Specifications",
+        quality1Text: "Defining product characteristics and acceptance criteria before ordering.",
+        quality2Title: "Sampling and Analysis",
+        quality2Text: "Planning sampling, laboratory analysis and product inspection where required.",
+        quality3Title: "Documentation",
+        quality3Text: "Reviewing documentation required for export and the destination market.",
+        quality4Title: "Delivery",
+        quality4Text: "Arranging packaging, delivery terms and shipment conditions by agreement.",
+        qualityNote: "Certificates, analysis results and compliance statements are not guaranteed unless verified for the relevant product and lot.",
+
+        processEyebrow: "Our Process",
+        processTitle: "From Enquiry to Shipment",
+        processIntro: "Each stage of the commercial process proceeds with clear product and delivery requirements.",
+        step1Title: "Enquiry",
+        step1Text: "Receiving product, quantity, quality, packaging and destination details.",
+        step2Title: "Quotation",
+        step2Text: "Assessing sourcing conditions and preparing a commercial quotation.",
+        step3Title: "Confirmation",
+        step3Text: "Confirming specifications, quantities, pricing and delivery terms.",
+        step4Title: "Delivery",
+        step4Text: "Following the agreed shipment and documentation requirements.",
+
+        contactEyebrow: "Contact",
+        contactTitle: "Submit Your Trade Enquiry",
+        contactIntro: "Share your product, estimated quantity, quality expectations and destination to start the quotation process. You can also contact us directly.",
+        emailLabel: "Email",
+        phoneLabel: "Telephone",
+        addressLabel: "Address",
+        formTitle: "Quotation and Product Enquiry",
+        formIntro: "Complete the form to send your enquiry directly to us.",
+        formName: "Full Name",
+        namePlaceholder: "Your full name",
+        formCompany: "Company",
+        companyPlaceholder: "Company name",
+        formEmail: "Business Email",
+        formCountry: "Country / Destination Market",
+        countryPlaceholder: "e.g. Germany",
+        formProduct: "Product of Interest",
+        selectDefault: "Select a product",
+        formPumpkin: "Pumpkin Seeds",
+        formSunflower: "Sunflower Seeds",
+        formPistachio: "Antep Pistachios",
+        formMultiple: "Multiple Products",
+        formQuantity: "Estimated Quantity",
+        quantityPlaceholder: "e.g. 1 container / 22 tonnes",
+        formMessage: "Enquiry Details",
+        messagePlaceholder: "Product characteristics, quality criteria, packaging and delivery expectations...",
+        formSubmit: "Submit Enquiry →",
+        formSending: "Submitting...",
+        formSuccess: "Your enquiry has been submitted successfully. Thank you for your interest.",
+        formError: "Your enquiry could not be submitted. Please try again or contact us by email.",
+        formFootnote: "Your information is submitted so that we can assess your enquiry and contact you.",
+
+        footerTagline: "Local Sourcing. Global Delivery.",
+        rights: "All rights reserved.",
+        footerLocation: "Develi, Kayseri, Türkiye",
+        imageCredit: "Pistachio image: Wikimedia Commons, Pistachio.jpg, CC BY-SA 3.0."
+      }
+    };
+
+    let currentLanguage = "tr";
+
+    const languageToggle = document.getElementById("languageToggle");
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+    const form = document.getElementById("contactForm");
+    const submitButton = document.getElementById("submitButton");
+    const formStatus = document.getElementById("formStatus");
+
+    function setLanguage(language) {
+      currentLanguage = language;
+      const dict = translations[language];
+
+      document.documentElement.lang = language;
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.dataset.i18n;
+        if (dict[key] !== undefined) element.textContent = dict[key];
+      });
+
+      document.querySelectorAll("[data-i18n-html]").forEach((element) => {
+        const key = element.dataset.i18nHtml;
+        if (dict[key] !== undefined) element.innerHTML = dict[key];
+      });
+
+      document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+        const key = element.dataset.i18nPlaceholder;
+        if (dict[key] !== undefined) element.placeholder = dict[key];
+      });
+
+      languageToggle.textContent = language === "tr" ? "EN" : "TR";
+
+      document.title = language === "tr"
+        ? "Erciyes Aksu Tarım | Tarımsal Ürünler"
+        : "Erciyes Aksu Tarım | Agricultural Products";
+
+      const statusType = formStatus.dataset.type;
+      if (statusType === "success") {
+        showStatus(dict.formSuccess, "success");
+      } else if (statusType === "error") {
+        showStatus(dict.formError, "error");
+      }
+
+      try {
+        localStorage.setItem("ea-language", language);
+      } catch (_) {
+        // The language switch continues to work without local storage.
+      }
+    }
+
+    function showStatus(message, type) {
+      formStatus.textContent = message;
+      formStatus.className = "form-status visible " + type;
+      formStatus.dataset.type = type;
+    }
+
+    languageToggle.addEventListener("click", () => {
+      setLanguage(currentLanguage === "tr" ? "en" : "tr");
+    });
+
+    menuToggle.addEventListener("click", () => {
+      const open = mainNav.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(open));
+    });
+
+    mainNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    // Selecting a product on a product card fills the enquiry form.
+    document.querySelectorAll("[data-product]").forEach((link) => {
+      link.addEventListener("click", () => {
+        document.getElementById("product").value = link.dataset.product;
+      });
+    });
+
+    // Submit directly to Formspree. No email application is opened.
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      if (!form.reportValidity()) return;
+
+      const data = new FormData(form);
+      const endpoint = form.action;
+
+      submitButton.disabled = true;
+      submitButton.textContent = translations[currentLanguage].formSending;
+      formStatus.className = "form-status";
+      formStatus.textContent = "";
+
+      try {
+        const response = await fetch(endpoint, {
+          method: "POST",
+          body: data,
+          headers: {
+            "Accept": "application/json"
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error("Form submission failed");
+        }
+
+        form.reset();
+        showStatus(translations[currentLanguage].formSuccess, "success");
+      } catch (error) {
+        showStatus(translations[currentLanguage].formError, "error");
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = translations[currentLanguage].formSubmit;
+      }
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    try {
+      const savedLanguage = localStorage.getItem("ea-language");
+      setLanguage(savedLanguage === "en" ? "en" : "tr");
+    } catch (_) {
+      setLanguage("tr");
+    }
+  </script>
+
+</body>
+</html>
