@@ -884,6 +884,7 @@
       *, *::before, *::after { transition-duration: .01ms !important; }
     }
     
+
 .brand-symbol-svg {
   display: block;
   width: 54px;
@@ -891,8 +892,20 @@
   flex-shrink: 0;
   padding: 0;
   background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
   border-radius: 0;
 }
+
+.brand-symbol-svg,
+.brand-symbol-svg:hover,
+.brand-symbol-svg:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 
   </style>
 </head>
@@ -1483,7 +1496,29 @@
       <div class="footer-main">
         <div>
           <a class="brand" href="#home" aria-label="Erciyes Aksu Tarım">
-            <span class="brand-symbol" aria-hidden="true"><span>EA</span></span>
+            
+<svg class="brand-symbol brand-symbol-svg"
+     xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 100 100"
+     role="img"
+     aria-label="Erciyes Aksu Tarım logosu">
+  <path d="M18 43 A34 34 0 0 1 70 17"
+        fill="none" stroke="#B9A15A" stroke-width="5"
+        stroke-linecap="round"/>
+  <path d="M56 10 L91 79 L76 79 L55 39 L34 79
+           L19 79 Z"
+        fill="#064B3B"/>
+  <path d="M34 72 C35 48 47 33 69 25
+           C62 47 49 63 34 72 Z"
+        fill="#0D7655"/>
+  <path d="M37 78 Q54 63 79 59 L85 67
+           Q61 70 48 78 Z"
+        fill="#B9A15A"/>
+  <path d="M51 85 Q68 75 87 75 L91 82
+           Q71 82 60 85 Z"
+        fill="#B9A15A"/>
+</svg>
+
             <span class="brand-copy">
               <span class="brand-name">Erciyes Aksu Tarım</span>
               <span class="brand-caption" data-i18n="brandCaption">Tarımsal Ürünler</span>
