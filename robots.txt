@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://erciyesaksu.com.tr/sitemap.xml
